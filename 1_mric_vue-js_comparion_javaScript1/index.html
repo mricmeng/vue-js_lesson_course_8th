@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue-js</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<style>
+    input{
+        padding: 15px;
+    }
+</style>
+<body>
+    <div id="app">
+        <button @click="setText()">set text</button>
+        <h1>
+            {{txt}}
+        </h1>
+        <h2>
+            CSS
+        </h2>
+    </div>
+    <input type="button" value="js" id="btn1">
+    <h1 id="demo">
+        CSS
+    </h1>
+</body>
+<script src="index.js"></script>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue-js</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<style>
+    input{
+        padding: 15px;
+    }
+</style>
+<body>
+    <div id="app">
+        <button @click="setText()">set text</button>
+        <!--  -->
+        <h1>
+            {{txt}}
+        </h1>
+        <!-- if -->
+        <h1 v-if="txt2 == 'a'">
+            HTML
+        </h1>
+        <h1 v-else-if="txt2 == 'b'"> 
+            CSS
+        </h1>
+        <h1 v-else>
+            JS
+        </h1>
+        <!-- array -->
+        <h2>
+            {{colorList[0]}}
+        </h2>
+        <!-- obj -->
+        <h1>
+            {{ obj.name }}
+        </h1>
+        <!--  -->
+        <h1 @click="setVal()">
+            {{ price }}
+        </h1>
+
+
+
+
+    </div>
+</body>
+<script src="index.js"></script>
+</html>

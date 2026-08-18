@@ -1,6 +1,6 @@
 <script setup>
     import { ref } from 'vue';
-    import {itemList } from './Store';
+    import {itemList, totalData } from './Store';
 </script>
 <template>
     <table>
@@ -22,7 +22,7 @@
         <tfoot>
             <tr>
                 <td colspan="2">Total</td>
-                <td>10</td>
+                <td>{{totalData}}</td>
             </tr>
         </tfoot>
     </table>

@@ -1,27 +1,49 @@
 <script setup>
-    import { itemList } from './Store';
-    import { ref } from 'vue';
-    const txtId = ref(0);
+    import { itemList, totalData } from './Store';
+    import { ref, onMounted } from 'vue';
+    const txtId = ref(1);
     const txtName = ref('');
     const txtPrice = ref(0)
+    const getTotal = () =>{
+        totalData.value = 0;
+        itemList.value.forEach( (el) =>{
+            totalData.value += el.price
+        });
+    }
     const addItem = () =>{
+        if(txtName.value == ''){
+            alert('Please input name');
+            document.getElementById('txtName').focus();
+            return
+        }
         itemList.value.push(
             {
-                id : txtId,
-                name : txtName,
-                price : txtPrice
+                id : txtId.value,
+                name : txtName.value,
+                price : txtPrice.value
             }
         )
+        getAutoId();
+        txtName.value = '';
+        txtPrice.value = 0;
+        document.getElementById('txtName').focus();
+        getTotal();
     }
+    const getAutoId = () =>{
+        txtId.value = itemList.value.length + 1;
+    }
+    onMounted( () =>{
+        getAutoId();
+    });
 </script>
 <template>
     <div class="frm">
         <label for="">ID</label>
-        <input type="text" name="" id="" v-model="txtId">
+        <input type="text" v-model="txtId">
         <label for="">Name</label>
-        <input type="text" name="" id="" v-model="txtName">
+        <input type="text" v-model="txtName" id="txtName">
         <label for="">Price</label>
-        <input type="number" name="" id="" v-model="txtPrice">
+        <input type="number" v-model="txtPrice">
         <button @click="addItem">Post</button>
     </div>
 </template>

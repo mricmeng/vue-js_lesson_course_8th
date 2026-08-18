@@ -36,15 +36,30 @@
     }
 </style> -->
 
-<template>
+<!-- <template>
     <button @click="showPopup()">click</button>
-    <Popup v-if="isActive" header="Hello header" content="body"/>
+
+    <Popup v-if="isActive" :header="txtH" content="body"
+    @close="closePopup">
+        <template v-slot:h2>
+            <h2>Slot11</h2>   
+        </template>
+
+        <h3>Slot22</h3>
+    
+    </Popup>
+
     <NavBar/>
     <h1>{{txt}}</h1>
     <LeftMenu/>
     
+</template> -->
+<template>
+    <Form/>
 </template>
+
 <script>
+    import Form from './components/Form.vue';
     import NavBar from './components/NavBar.vue'; 
     import Popup from './components/Popup.vue';
     import LeftMenu from './components/leftMenu.vue';
@@ -52,18 +67,23 @@
         data(){
             return{
                 txt : "Hell Mac",
+                txtH : "Dynamic Header",
                 isActive : false,
             }
         },
         methods :{
             showPopup(){
-                this.isActive =true
+                this.isActive = true;
+            },
+            closePopup(){
+                this.isActive = false;
             }
         },
         components : {
             NavBar,
             LeftMenu,
-            Popup
+            Popup,
+            Form
         }
     }
 </script>

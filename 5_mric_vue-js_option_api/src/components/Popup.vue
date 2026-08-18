@@ -1,13 +1,27 @@
 <template>
-    <div class="popup">
+    <Teleport to="body">
+        <div class="popup">
         <div class="frm">
             <h1>{{header}}</h1>
             <p>{{ content }}</p>
+            <button @click="closePopup">Close</button>
+            <div>
+                <slot name="h2"></slot>
+            </div>
+
+            <slot></slot>
         </div>
     </div>
+    </Teleport>
+    
 </template>
 <script>
     export default{
+        methods :{
+            closePopup(){
+                this.$emit('close')
+            }
+        },
         props : [
             'header',
             'content'
@@ -20,10 +34,12 @@
     }
 </script>
 <style scoped>
+
     *{
         margin: 0;
         padding: 0;
     }
+
     .popup{
         width: 100%;
         height: 100%;
@@ -46,4 +62,5 @@
         justify-content: center;
         align-items: center;
     }
+
 </style>

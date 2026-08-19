@@ -8,7 +8,8 @@ export const itemList = ref(
                 'iPhone',
                 'iMac',
                 'iWatch'
-            ]
+            ],
+            isShow : false
         },
         {
             id : 2,
@@ -17,7 +18,8 @@ export const itemList = ref(
                 'Facebook',
                 'Messager',
                 'Instagram'
-            ]
+            ],
+            isShow : false,
         },
         {
             id : 3,
@@ -26,7 +28,8 @@ export const itemList = ref(
                 'Google search',
                 'Google map',
                 'Googel drive'
-            ]
+            ],
+            isShow : false,
         },
     ]
 );

@@ -14,7 +14,7 @@
 }
 
 .menu ul li a:hover{
-    background-color: #ccc !important;
+    background-color: #ccc;
     color: green;
     cursor: pointer;
 }
@@ -39,5 +39,32 @@
 
 .menu ul li .sub-menu li a:hover{
     background-color: navajowhite;
+}
+
+.drawer-box{
+    width: 300px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -310px;
+    background-color: green;
+    transition: 1.5s;
+    z-index: 1;
+}
+
+.isDrawer{
+    left: 0;
+}
+
+.drawer-box ul li a{
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+}
+
+.drawer-box ul li a:hover{
+    background-color: navajowhite;
+    color: green;
 }
 

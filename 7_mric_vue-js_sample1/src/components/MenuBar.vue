@@ -1,5 +1,8 @@
 <script setup>
-    import { itemList } from './Store';
+    import { itemList, isDrawer } from './Store';
+    const showDrawer = () =>{
+        isDrawer.value = true;
+    }
 </script>
 
 <template>
@@ -8,7 +11,7 @@
             <div class="row">
                 <div class="col-xxl-12 col-xl-12 menu">
                     <ul>
-                        <li>
+                        <li @click="showDrawer">
                             <a>
                                 <i class="fa-solid fa-bars"></i>
                             </a>
@@ -19,7 +22,6 @@
                                 <li v-for="(sub, i2) in item.sub" :key="i2">
                                     <a href="">{{ sub }}</a>
                                 </li>
-                                
                             </ul>
                         </li>
                     </ul>
@@ -28,6 +30,7 @@
         </div>
     </div>
 </template>
+
 <style scoped>
     @import '../assets/styles/menu.css'
 </style>

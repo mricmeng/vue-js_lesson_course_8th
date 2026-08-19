@@ -14,9 +14,15 @@
 }
 
 .menu ul li a:hover{
-    background-color: #ccc;
-    color: green;
-    cursor: pointer;
+    background-color: rgb(168, 255, 168);
+    color: black;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.356);
+    width: 90%;
+    border-radius: 0px 88px 088px 70px;
+    margin-left: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .menu ul li{
@@ -28,9 +34,10 @@
     top: 100%;
     left: 0;
     width: 300px;
-    background-color:black;
+    background-color:#999;
     flex-direction: column;
     display: none;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.376);
 }
 
 .menu ul li:hover .sub-menu{
@@ -38,7 +45,7 @@
 }
 
 .menu ul li .sub-menu li a:hover{
-    background-color: navajowhite;
+    background-color:rgb(168, 255, 168);
 }
 
 .drawer-box{
@@ -64,7 +71,14 @@
 }
 
 .drawer-box ul li a:hover{
-    background-color: navajowhite;
-    color: green;
+    background-color:rgb(168, 255, 168);
+    color: black;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.356);
+    width: 90%;
+    border-radius: 0px 88px 088px 70px;
+    margin-left: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 

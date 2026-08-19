@@ -2,9 +2,7 @@
     import { ref } from 'vue';
     import { itemList } from './Store';
     const hideShowSubMenu = (item) =>{
-        item.isShow = !item.isShow
-        
-        
+        item.isShow = !item.isShow   
     }
 </script>
 

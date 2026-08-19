@@ -1,0 +1,43 @@
+.menu-bar{
+    background-color: green;
+}
+
+.menu ul{
+    display: flex;
+}
+
+.menu ul li a{
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.menu ul li a:hover{
+    background-color: #ccc !important;
+    color: green;
+    cursor: pointer;
+}
+
+.menu ul li{
+    position: relative;
+}
+
+.menu ul li .sub-menu{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 300px;
+    background-color:black;
+    flex-direction: column;
+    display: none;
+}
+
+.menu ul li:hover .sub-menu{
+    display: flex;
+}
+
+.menu ul li .sub-menu li a:hover{
+    background-color: navajowhite;
+}
+

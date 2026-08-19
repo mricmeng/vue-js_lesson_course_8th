@@ -9,7 +9,6 @@
             <li v-for="(item, i) in itemList" :key="i">
                 <a href="">{{ item.name }}</a>
             </li>
-            
         </ul>
     </div>
 </template>

@@ -149,7 +149,7 @@
         position: relative;
         gap: 6px;
     }
-    
+
     .slide-container{
         height: 500px;
         /* background-color: skyblue */

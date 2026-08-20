@@ -4,7 +4,6 @@ export const itemList = ref(
         {
             id : 1,
             name : 'Apple',
-            price : '1199',
             sub : [
                 'iPhone',
                 'iMac',
@@ -12,12 +11,10 @@ export const itemList = ref(
             ],
             isShow : false,
             img : 'src/assets/img/1.jpg',
-            img2 : 'src/assets/img/001.jpg',
         },
         {
             id : 2,
             name : 'Meta',
-            price : '3.49',
             sub : [
                 'Facebook',
                 'Messager',
@@ -25,12 +22,10 @@ export const itemList = ref(
             ],
             isShow : false,
             img : 'src/assets/img/2.jpg',
-            img2 : 'src/assets/img/002.jpg',
         },
         {
             id : 3,
             name : 'Google',
-            price : '49999',
             sub : [
                 'Google search',
                 'Google map',
@@ -38,20 +33,6 @@ export const itemList = ref(
             ],
             isShow : false,
             img : 'src/assets/img/3.jpg',
-            img2 : 'src/assets/img/003.jpg',
-        },
-        {
-            id : 4,
-            name : 'SpaceX',
-            price : '25999',
-            sub : [
-                'twister',
-                'Starline',
-                'Tesla'
-            ],
-            isShow : false,
-            img : 'src/assets/img/4.jpg',
-            img2 : 'src/assets/img/004.jpg',
         },
     ]
 );
@@ -104,3 +85,55 @@ export const cityList = ref([
         ]
     },
 ]);
+export const productList = ref(
+    [
+        {
+            id : 1,
+            name : 'iMac',
+            price : 2999,
+            img2 : 'src/assets/img/001.jpg',
+        },
+        {
+            id : 2,
+            name : 'Ice latte',
+            price : 3.49,
+            img2 : 'src/assets/img/002.jpg',
+        },
+        {
+            id : 3,
+            name : 'Tesla',
+            price : 59999,
+            img2 : 'src/assets/img/003.jpg',
+        },
+        {
+            id : 4,
+            name : 'Mric TOWER',
+            price : '390 Millions',
+            img2 : 'src/assets/img/9.jpg',
+        },
+        {
+            id : 5,
+            name : 'Hermes',
+            price : '25000',
+            img2 : 'src/assets/img/005.jpg',
+        },
+        {
+            id : 6,
+            name : 'Hermes',
+            price : '25x,xxx',
+            img2 : 'src/assets/img/004.jpg',
+        },
+        {
+            id : 7,
+            name : 'Hermes',
+            price : '39000',
+            img2 : 'src/assets/img/007.jpg',
+        },
+        {
+            id : 8,
+            name : 'Hermes',
+            price : '59000',
+            img2 : 'src/assets/img/008.jpg',
+        },
+    ]
+)

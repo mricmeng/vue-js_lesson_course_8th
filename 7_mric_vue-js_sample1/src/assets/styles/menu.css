@@ -42,7 +42,7 @@
 
 .menu ul li:hover .sub-menu{
     display: flex;
-    z-index: 1;
+    z-index: 3;
 }
 
 .menu ul li .sub-menu li a:hover{

@@ -5,12 +5,14 @@
   import HeroSection from './components/HeroSection.vue';
   import { isDrawer } from './components/Store.js';
   import CityList from './components/CityList.vue';
+  import ContainerItem from './components/ContainerItem.vue';
 </script>
 
 <template>
   <MenuBar/>
-  <HeroSection/>
   <CityList />
+  <HeroSection/>
+  <ContainerItem/>
   <Drawer/>
   <Popup v-if="isDrawer"/>
 </template>

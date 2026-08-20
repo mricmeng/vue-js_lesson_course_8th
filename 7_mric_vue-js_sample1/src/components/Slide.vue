@@ -151,6 +151,7 @@
     }
 
     .slide-container{
+        padding: 0 5px;
         height: 500px;
         /* background-color: skyblue */
     }

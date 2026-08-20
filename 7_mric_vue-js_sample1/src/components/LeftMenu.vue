@@ -69,6 +69,8 @@
     }
 
     .left-menu{
+        padding: 0 5px;
         height: 450px;
+        z-index: 1;
     }
 </style>

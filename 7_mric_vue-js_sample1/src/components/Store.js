@@ -4,6 +4,7 @@ export const itemList = ref(
         {
             id : 1,
             name : 'Apple',
+            price : '1199',
             sub : [
                 'iPhone',
                 'iMac',
@@ -11,10 +12,12 @@ export const itemList = ref(
             ],
             isShow : false,
             img : 'src/assets/img/1.jpg',
+            img2 : 'src/assets/img/001.jpg',
         },
         {
             id : 2,
             name : 'Meta',
+            price : '3.49',
             sub : [
                 'Facebook',
                 'Messager',
@@ -22,10 +25,12 @@ export const itemList = ref(
             ],
             isShow : false,
             img : 'src/assets/img/2.jpg',
+            img2 : 'src/assets/img/002.jpg',
         },
         {
             id : 3,
             name : 'Google',
+            price : '49999',
             sub : [
                 'Google search',
                 'Google map',
@@ -33,6 +38,20 @@ export const itemList = ref(
             ],
             isShow : false,
             img : 'src/assets/img/3.jpg',
+            img2 : 'src/assets/img/003.jpg',
+        },
+        {
+            id : 4,
+            name : 'SpaceX',
+            price : '25999',
+            sub : [
+                'twister',
+                'Starline',
+                'Tesla'
+            ],
+            isShow : false,
+            img : 'src/assets/img/4.jpg',
+            img2 : 'src/assets/img/004.jpg',
         },
     ]
 );

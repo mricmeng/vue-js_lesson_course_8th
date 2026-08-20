@@ -1,0 +1,47 @@
+.item-box{
+    height: 340px;
+    margin-top: 10px;
+    padding: 0 5px;
+    /* background-color: aquamarine; */
+}
+
+.item-box .img-box{
+    width: 100%;
+    height: 80%;
+    background-color: brown;
+    overflow: hidden;
+}
+
+.item-box .img-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.item-box .img-box img:hover{
+    transform: scale(1.1);
+    transition: 3s;
+}
+
+.item-box .txt-box{
+    width: 100%;
+    height: 20%;
+    background-color: #eee;
+    text-align: right;
+    padding: 5px;
+}
+
+.item-box .txt-box h1{
+    font-size: 22px;
+    color: #333;
+}
+
+.item-box .txt-box h1:hover{
+    font-size: 28px;
+}
+
+.item-box .txt-box span{
+    font-size: 18px;
+    color: red;
+    z-index: 1;
+}

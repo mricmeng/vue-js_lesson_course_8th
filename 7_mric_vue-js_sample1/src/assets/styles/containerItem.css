@@ -31,20 +31,31 @@
     background-color: rgba(0, 128, 0, 0.078);
     text-align: right;
     padding: 5px;
+    line-height: 35px;
 }
 
 .item-box .txt-box h1{
     font-size: 22px;
-    color: #333;
+    font-weight: 100px;
+    color: rgba(0, 128, 0, 0.678);
 }
 
 .item-box .txt-box h1:hover{
-    font-size: 25px;
-    transition: 0.1s;
+    text-decoration: underline;
+    font-style: italic;
+     color: rgba(0, 128, 0, 0.678);
 }
 
 .item-box .txt-box span{
-    font-size: 18px;
+    font-size: 15px;
+    padding: 4px 12px;
+    background-color: rgba(0, 128, 0, 0.156);
+    border-radius: 15px 0 10px 15px;
+    font-style: italic;
     color: red;
     z-index: 1;
+}
+
+.item-box .txt-box span:hover{
+    opacity: 0.8;
 }

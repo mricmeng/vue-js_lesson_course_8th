@@ -135,5 +135,41 @@ export const productList = ref(
             price : '59000',
             img2 : 'src/assets/img/008.jpg',
         },
+        {
+            id : 9,
+            name : 'Hermes',
+            price : '59000',
+            img2 : 'src/assets/img/009.jpg',
+        },
+        {
+            id : 10,
+            name : 'Hermes',
+            price : '59000',
+            img2 : 'src/assets/img/010.jpg',
+        },
+        {
+            id : 11,
+            name : 'Hermes',
+            price : '59000',
+            img2 : 'src/assets/img/011.jpg',
+        },
+        {
+            id : 12,
+            name : 'Hermes',
+            price : '59000',
+            img2 : 'src/assets/img/012.jpg',
+        },
+    ]
+);
+export const tmpItem = ref(
+    [
+        // {
+        //     name : 'Mama',
+        //     img2 : 'src/assets/img/001.jpg',
+        // },
+        // {
+        //     name : 'Mama',
+        //     img2 : 'src/assets/img/001.jpg',
+        // },
     ]
 )

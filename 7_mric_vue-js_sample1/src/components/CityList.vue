@@ -17,7 +17,7 @@
 <template>
     <div class="container" style="padding-block: 15px;">
         <div class="row">
-            <div class="col-xxl-4 col-lx-4 col-lg-4">
+            <div class="col-xxl-4 col-lx-4 col-lg-4 p-1">
                 <select class="form-control" @change="getDistrict" v-model="cityInd">
                     <option value="-1">Select city</option>
                     <option :value="i" v-for="(city, i) in cityList" :key="i">
@@ -25,7 +25,7 @@
                     </option>
                 </select>
             </div>
-            <div class="col-xxl-4 col-lx-4 col-lg-4">
+            <div class="col-xxl-4 col-lx-4 col-lg-4 p-1">
                 <select class="form-control" @change="getCommune" v-model="disInd">
                     <option value="-1">Select district</option>
                     <option :value="i" v-for="(dis, i) in disData" :key="i">
@@ -33,7 +33,7 @@
                     </option>
                 </select>
             </div>
-            <div class="col-xxl-4 col-lx-4 col-lg-4">
+            <div class="col-xxl-4 col-lx-4 col-lg-4 p-1">
                 <select class="form-control">
                     <option value="-1">Select commune</option>
                     <option :value="i" v-for="(data, i) in comData" :key="i">
